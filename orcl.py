@@ -136,4 +136,5 @@ def max_length(series):
     if maxi and not pd.isnull(maxi):
         return int(maxi)
     return 1
+    return 1
 name = name
