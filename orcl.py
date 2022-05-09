@@ -3,7 +3,7 @@ import sqlalchemy as sa
 import logging
 import csv
 
-from . import db_connection
+from2 . import db_connection
 
 
 ##############################################################
@@ -120,3 +120,20 @@ def max_length(series):
     if maxi and not pd.isnull(maxi):
         return int(maxi)
     return 1
+
+def max_length(series):
+    """ Returns the length of the longest longest in the series
+    Parameters
+    ----------
+    series: pd.Series
+        a specific Series
+    Returns
+    -------
+    maxi: int
+        length of the longest element in the series
+    """
+    maxi = series.str.len().max()
+    if maxi and not pd.isnull(maxi):
+        return int(maxi)
+    return 1
+
