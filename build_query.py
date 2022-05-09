@@ -1,4 +1,4 @@
-def build_download_query(from_table, columns_to_select, join_tables,
+def build_download_query((from_table, columns_to_select, join_tables,
                          nb_days, date_col, cond='IN', sampling=None):
     from_statement = build_from_statement(from_table, join_tables)
     where_statement = build_where_statement(sampling, date_col, nb_days, cond)
