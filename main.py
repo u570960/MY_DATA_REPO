@@ -23,3 +23,8 @@ while True:
 	if 'aucune' in s:
 		break
 	
+while True:
+	s = input('Quelle est votre question ? \n')
+	if 'aucune' in s:
+		break
+	
